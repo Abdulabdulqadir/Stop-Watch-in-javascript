@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    background-color: rgb(120, 204, 238);
+}
+
+.stopWatch {
+    width: 30%;
+    padding: 30px 20px 30px;
+    background-color: rgb(177, 130, 231);
+    box-shadow: 1px 1px 20px rgba(128, 128, 128, 0.2);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.time{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.time h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btns button{
+    width: 28%;
+    height: 30px;
+    padding: 20px;
+    border-radius: 2px;
+    opacity: 0.5;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+.btns button:hover{
+    opacity: 1;
+    border: none;
+    transform: translateY(-5px);
+}
+.btns button:nth-child(1){
+    background-color: greenyellow;
+}
+.btns button:nth-child(2){
+    background-color: yellow;
+}
+.btns button:nth-child(3){
+    background-color: red;
+}
+@media screen and (max-width: 1100px) {
+    .stopWatch{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .stopWatch{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .stopWatch{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .stopWatch{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .stopWatch{
+        width: 80%;
+    }
+    .btns{
+        flex-direction: column;
+    }
+    .btns button{
+        width: 90%;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .stopWatch{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 260px) {
+    .stopWatch{
+        width: 90%;
+    }
+}
